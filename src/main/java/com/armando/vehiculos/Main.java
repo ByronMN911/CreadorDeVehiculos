@@ -43,6 +43,7 @@ public class Main {
                     break;
                 default:
                     System.out.println("Opción inválida, intente de nuevo: ");
+                    break;
             }
         }
 
@@ -136,6 +137,7 @@ public class Main {
                     //Llamamos al metodo calcularRevolucionMotor de la clase Terrestre y le da como parámetro la fuerza y el radio
                     int fuerzaMotor = terrestre.calcularRevolucionMotor(fuerza, radio);
                     System.out.println("La fuerza del motor del vehículo " +nombre+ " es de: " + fuerzaMotor +"revoluciones");
+                    break;
                 case 4:
                     /* Mostrar información del vehículo, no es necesario getters porque el modificador de acceso de esos
                      * atributos es de tipo protected, por lo que todas las clases del paquete pueden acceder a ellos.
@@ -145,12 +147,14 @@ public class Main {
                     terrestre.imprimir();
                     System.out.println("Llantas: " + terrestre.cantidadLlantas);
                     System.out.println("Uso: " + terrestre.uso);
+                    break;
                 case 5:
                     //Se termina el bucle while porque no se cumple la condición
                     regresar = true;
                     break;
                 default:
                     System.out.println("Opción inválida, intente de nuevo: ");
+                    break;
             }
         }
     }
@@ -233,10 +237,12 @@ public class Main {
                     //Llamamos al metodo calcularRevolucionMotor de la clase Terrestre y le da como parámetro la fuerza y el radio
                     int fuerzaMotor = acuatico.calcularRevolucionMotor(fuerza, radio);
                     System.out.println("La fuerza del motor del vehículo " +nombre+ " es de: " + fuerzaMotor +"revoluciones");
+                    break;
                 case 4:
                     System.out.println("Ingresa la velocidad del viento (km/h) para recibir una recomendación de navegación: ");
                     int velocidadViento = Integer.parseInt(sc.nextLine());
                     acuatico.recomedarVelocidad(velocidadViento);
+                    break;
                 case 5:
                     /* Mostrar información del vehículo, no es necesario getters porque el modificador de acceso de esos
                      * atributos es de tipo protected, por lo que todas las clases del paquete pueden acceder a ellos.
@@ -246,12 +252,14 @@ public class Main {
                     acuatico.imprimir();
                     System.out.println("Tipo de Vehículo Acuático: " + acuatico.tipo);
                     System.out.println("Cantidad de Pasajeros: " + acuatico.capacidadPasajeros);
+                    break;
                 case 6:
                     //Se termina el bucle while porque no se cumple la condición
                     regresar = true;
                     break;
                 default:
                     System.out.println("Opción inválida, intente de nuevo: ");
+                    break;
             }
         }
     }

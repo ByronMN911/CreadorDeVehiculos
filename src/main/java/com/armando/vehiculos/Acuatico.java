@@ -90,9 +90,11 @@ public class Acuatico extends Vehiculo implements Motor, Vela {
     public void recomedarVelocidad(int velocidadViento){
         if (velocidadViento > 80){
             System.out.println("La velocidad del viento es mayor a 80km/h, se recomienda no salir a navegar");
+            System.out.println("Se ha reducido la velocidad del vehículo a 0 km/h");
             velocidadActual=0;
         } else if(velocidadViento > 50) {
-            System.out.println("La velocidad del viento es: " + velocidadViento + " Se ha reducido al velocidad 20km/h");
+            System.out.println("La velocidad del viento es: + velocidadViento");
+            System.out.println("Se ha reducido la velocidad del vehículo 20 km/h");
             velocidadActual= velocidadActual-20;
         } else {
             System.out.println("La velocidad del viento es: " + velocidadViento + " Puedes navegar tranquilamente");
